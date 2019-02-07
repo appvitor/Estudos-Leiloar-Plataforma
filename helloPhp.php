@@ -16,3 +16,7 @@
 <? echo $frutas[2] //manipular arrays ?>
 <? $nascimento = new DateTime(); //criar objeto ?>
 <? $arquivo = fopen("arquivo.tipo", "permissoes"); //acessar arquivo ?>
+<? $ip = $_SERVER["REMOTE_ADDR"]; //obter IP do usuário ?>
+<? echo $ip; ?>
+<? $ip = $_SERVER["SCRIPT_NAME"]; //obter nome e local do arquivo acessado ?>
+<? echo $ip ?>

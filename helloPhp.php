@@ -26,3 +26,12 @@
 <?//PHP 7: var_dump($ano <=> $salario) //operador de comparação que retorna -1 ou 0 ou 1 ?>
 <? $num1 = NULL; $num2 = NULL; $num3 = 10; ?>
 <?//PHP 7: echo $num1 ?? $num2 ?? $num3 //mostra num1 se nao for NULL, se for, mostra o num2, se ele tmbm for NULL, mostra o 3 ?>
+<? //Ao utilizar aspas duplas, o conteudo das vars é acessado e exibido, as aspas simples mostram a variavel em si, não seu conteúdo ?>
+<? echo "<br>"; echo strtoupper($nomeCompleto) //função p/ string ficar em maiusculo ?>
+<? echo "<br>"; echo strtolower($nomeCompleto) //função p/ string ficar em minusculo ?>
+<? echo "<br>"; echo ucwords($nomeCompleto) //função p/ 1° letra de cada palavra da string ficar em maiusculo ?>
+<? echo "<br>"; echo ucfirst($nomeCompleto) //função p/ 1° letra da string ficar em maiusculo ?>
+<? echo "<br>"; echo str_replace("Vitor", "Appvitor", $nomeCompleto) //função p/ substituir elementos da string ?>
+<? echo "<br>"; echo strpos($nomeCompleto, "Pires") //função p/ saber em qual posição da string está o elemento buscado ?>
+<? echo "<br>"; echo substr($nomeCompleto, 0, 6) //função p/ 1° letra de cada palavra da string ficar em maiusculo ?>
+<? echo "<br>"; echo strlen($nomeCompleto) //função que retorna o tamanho da string ?>

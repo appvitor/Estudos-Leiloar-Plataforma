@@ -61,3 +61,37 @@
 		echo "<br>"."Ambos os valores são iguais";	
 	}
 ?>
+
+<?
+	$numDiaSemana = date("w");
+	switch ($numDiaSemana){
+		case 0:
+			echo "<br>"."Domingo";
+		break;
+		case 1:
+			echo "<br>"."Segunda";
+		break;
+		case 2:
+			echo "<br>"."Terça";
+		break;
+		default: 
+			echo "<br>"."Dia ainda não definido";
+		break;
+	}
+?>
+
+<?
+	for ($i=0; $i <= 100; $i+=25) { 
+		if ($i == 50) continue; //o CONTINUE basicamente diz "ignore, pule esta parte do laço"
+		echo "<br>".$i;
+		//Caso um loop infinito ocorra, 
+	}
+?>
+
+<?
+	echo "<br> <select>";
+	for ($i=date("Y"); $i >= date("Y")-50 ; $i--) { 
+		echo "<option value=".$i.">".$i."</option>";
+	}
+	echo "</select>";
+?>

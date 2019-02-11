@@ -121,3 +121,22 @@
 		}
 	}
 ?>
+<?
+	$condicao = true;
+	while ($condicao) {
+		$numero = rand(1, 10); //rand sorteio numero randomicamente
+		if($numero === 3) {
+			echo "TRÊS!!!";
+			$condicao = false;
+		}
+		else echo $numero . " ,";
+	}
+?>
+<?
+	$total = 100;
+	$desconto = 0.9;
+	do {
+		$total *= $desconto;
+	} while($total > 100);
+	echo "<br>".$total;
+?>

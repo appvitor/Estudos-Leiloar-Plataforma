@@ -91,7 +91,33 @@
 <?
 	echo "<br> <select>";
 	for ($i=date("Y"); $i >= date("Y")-50 ; $i--) { 
-		echo "<option value=".$i.">".$i."</option>";
+		echo "<option value=".$i.">".$i."</option>"; //utilizando a informação do laço para gerar as opções disponíveis ao usuário
 	}
 	echo "</select>";
+?>
+
+<?
+	echo "<select>";
+	$meses = array("Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez");
+	foreach ($meses as $index => $mes) {
+		echo "<option value=".$index.">".$mes."</option>";
+	}
+	echo "</select>";
+?>
+
+<form> 
+	<input type="text" name="nome" placeholder="Nome">
+	<input type="date" name="nascimento">
+	<input type="submit" name="OK" value="Enviar">
+	<!--Criação do formulario com seus devidos campos em HTML -->
+</form>
+<?
+	if(isset($_GET)) { //verificação se os campos foram preenchidos e enviados
+		foreach ($_GET as $key => $value) {
+			//a informação chega como um objeto, com várias diferentes infos, incluindo o botao de enviar, onde cada uma depois é exibida
+			echo "Nome do Campo: ".$key." ";
+			echo "Valor do Campo: ".$value." ";
+			echo "<hr>";
+		}
+	}
 ?>

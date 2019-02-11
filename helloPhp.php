@@ -176,3 +176,12 @@
 	//define("BANCO_DE_DADOS", ['127.0.0.1', 'root', 'password', 'test']); No PHP 7 constantes podem ser um Array
 	echo "<br>".PHP_VERSION;
 ?>
+
+<?
+	session_start(); // este comando habilita a utilização de diferentes sessões de uso na página
+	echo "<br>".$_SESSION["nome"]; //para que isto funcione, o arquivo sessoes.php deve existir e estar aberto, junto com o comando session_start()
+	//Uma opção para evitar esta dependecia, seria criar um arquivo separado, onde todas as settings com relação a sessão e tempo de conexão ficariam juntos
+	//require_once("config.php");
+	session_unset($_SESSION["nome"]); //limpar a sessão, mas pode continuar a existir
+	session_destroy($$SESSION["nome"]); //destroi completamente a sessão
+?>

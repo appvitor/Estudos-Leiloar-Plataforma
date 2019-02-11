@@ -163,3 +163,8 @@
 	echo "<br>";
 	print_r($pessoas);
 ?>
+
+<?
+	$json = '[{"nome": "Jo\u00e3o","idade": 20},{"nome": "Glaucio","idade": 25}]';
+	json_decode($json); //O comando decode traz o conteúdo do JSON para dentro do código PHP, já o encode exporta o conteúdo p/ fora
+?>

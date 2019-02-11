@@ -168,3 +168,11 @@
 	$json = '[{"nome": "Jo\u00e3o","idade": 20},{"nome": "Glaucio","idade": 25}]';
 	json_decode($json); //O comando decode traz o conteúdo do JSON para dentro do código PHP, já o encode exporta o conteúdo p/ fora
 ?>
+
+<?
+	//define é o comando para criar constantes
+	define("SERVIDOR", "127.0.0.1"); //sempre interessante nomear constantes em maiusculo, facilitar visualização
+	echo "<br>".SERVIDOR;
+	//define("BANCO_DE_DADOS", ['127.0.0.1', 'root', 'password', 'test']); No PHP 7 constantes podem ser um Array
+	echo "<br>".PHP_VERSION;
+?>

@@ -170,7 +170,7 @@
 ?>
 
 <?
-	//define é o comando para criar constantes
+	//DEFINE é o comando para criar CONSTANTES
 	define("SERVIDOR", "127.0.0.1"); //sempre interessante nomear constantes em maiusculo, facilitar visualização
 	echo "<br>".SERVIDOR;
 	//define("BANCO_DE_DADOS", ['127.0.0.1', 'root', 'password', 'test']); No PHP 7 constantes podem ser um Array
@@ -178,10 +178,47 @@
 ?>
 
 <?
-	session_start(); // este comando habilita a utilização de diferentes sessões de uso na página
-	echo "<br>".$_SESSION["nome"]; //para que isto funcione, o arquivo sessoes.php deve existir e estar aberto, junto com o comando session_start()
-	//Uma opção para evitar esta dependecia, seria criar um arquivo separado, onde todas as settings com relação a sessão e tempo de conexão ficariam juntos
+	//Uma sessão é quando cada visitante do site/serviço possiu um valor diferente para as variaveis. Exemplo: username é uma variavel com valor diferente em cada sessão
+	session_start(); // este comando habilita a utilização de diferentes sessões de uso na página, ele é obrigatório.
+	//Uma opção para evitar esta dependecia, seria criar um arquivo separado, onde todas as settings com relação a sessão e tempo de conexão ficariam juntos.
+	echo "<br>".$_SESSION["nome"]; //para que isto funcione, o arquivo sessoes.php deve existir e estar aberto
 	//require_once("config.php");
 	session_unset($_SESSION["nome"]); //limpar a sessão, mas pode continuar a existir
-	session_destroy($$SESSION["nome"]); //destroi completamente a sessão
+	session_destroy($_SESSION["nome"]); //destroi completamente a sessão
+
+	$idSession = session_id();
+	echo "<br>".session_id(); //funcao para identificar o ID da sessao daquele visitante
+	session_regenerate_id(); //funcao para atribuir um novo ID para o mesmo visitante
+	echo "<br>".session_id();
+	//variavel super global para sessão: $_SESSION
+	session_id($idSession); //ao fazer isto, estou recuperando/atribuindo um ID novo/recuperando um antigo
+	echo "<br>".session_id();
+	echo "<br>".session_save_path(); //funcao para exibir o local onde o arquivo temporario da sessao está armazenado
+	
+	/* Durante os estudos a função session_status, se encontrava como undefined
+		switch(session_status()) {
+			case 0: //PHP_SESSION_DISABLED
+				echo "<br>"."sessoes desabilitadas";
+			break;
+			case 1: //PHP_SESSION_NONE
+				echo "<br>"."nenhuma sessao existente";
+			break;
+			case 2://PHP_SESSION_ACTIVE
+				echo "<br>"."sessao ativa";	
+			break;
+		}
+	*/
+?>
+
+<?
+	function ola() {
+		return "<br>"."Hello User Functions World!";
+	}
+	echo ola();
+
+	function olaCustom($texto) {
+		return "<br>".$texto;
+		//O que acontece em Vegas, fica em Vegas. O que acontece dentro da função, fica dentro da função
+	}
+	echo olaCustom("Ola função olaCustom!");
 ?>

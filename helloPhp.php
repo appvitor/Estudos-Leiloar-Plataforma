@@ -28,9 +28,6 @@
 <? $frase = "teste" ?>
 <? $frase .= " de string" //pegar seu conteudo e concatenar com ele ?>
 <? echo "<br>".$frase ?>
-<?//PHP 7: var_dump($ano <=> $salario) //operador de comparação que retorna -1 ou 0 ou 1 ?>
-<? $num1 = NULL; $num2 = NULL; $num3 = 10; ?>
-<?//PHP 7: echo $num1 ?? $num2 ?? $num3 //mostra num1 se nao for NULL, se for, mostra o num2, se ele tmbm for NULL, mostra o 3 ?>
 <? //Ao utilizar aspas duplas, o conteudo das vars é acessado e exibido, as aspas simples mostram a variavel em si, não seu conteúdo ?>
 
 <? echo "<br>".strtoupper($nomeCompleto); //função p/ string ficar em maiusculo ?>
@@ -84,7 +81,6 @@
 	for ($i=0; $i <= 100; $i+=25) { 
 		if ($i == 50) continue; //o CONTINUE basicamente diz "ignore, pule esta parte do laço"
 		echo "<br>".$i;
-		//Caso um loop infinito ocorra, 
 	}
 ?>
 
@@ -221,6 +217,5 @@
 		//O que acontece em Vegas, fica em Vegas. O que acontece dentro da função, fica dentro da função
 	}
 	echo olaCustom("Ola função olaCustom!");
-
 	//Passagem de parametro por referencia == & == acessar uma variavel de msm nome em outro local do código, exemplo, fora de uma função, e assim, quebrando a regra do "Fica em Vegas"
 ?>

@@ -219,3 +219,22 @@
 	echo olaCustom("Ola função olaCustom!");
 	//Passagem de parametro por referencia == & == acessar uma variavel de msm nome em outro local do código, exemplo, fora de uma função, e assim, quebrando a regra do "Fica em Vegas"
 ?>
+
+<?
+//Funções anonimas nao possuem nome, nem return
+	function teste($callback){
+		//Processo
+		$callback();
+	}
+
+	teste(function(){
+		echo "<br>"."Terminou!";
+	});
+
+	$fn = function($a){
+		echo "<br>";
+		var_dump($a);
+	};
+
+	$fn("Oi!");
+?>

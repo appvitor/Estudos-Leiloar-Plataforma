@@ -251,4 +251,13 @@
 	setlocale(LC_ALL, "pt_BR", "pt_BR.utf-8", "portuguese"); //Setar linguagem, região
 
 	echo '<br>'.strftime("%A %B"); //Formata uma hora/data de acordo com as configurações locais
+
+	$minhaData = new DateTime(); //Instancia de um objeto da Classe DateTime
+	echo '<br>'.$minhaData->format("d/m/Y H:i:s"); //Acessando função da Classe DateTime
+
+	$periodo = new DateInterval("P15D"); //Instancia de DateInterval, P == periodo, 15D == 15 dias
+
+	$minhaData->add($periodo); //Pegando minha data e adicionando um intervalo de tempo a ela(Esta função espera um DateInterval)
+
+	echo '<br>'.$minhaData->format("d/m/Y H:i:s");
 ?>

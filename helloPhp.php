@@ -238,3 +238,17 @@
 
 	$fn("Oi!");
 ?>
+
+<?
+	//Ao utilizar letras maiusculas com date, o valor é alterado p/ 24 horas ou valor completo ou dia da semana
+	echo "<br>".date("l d/m/Y h:i A"); //Apenas uma vez de cada atributo de data já funciona
+
+	echo '<br>'.time(); //Obter o timestamp da data, que tmbm pode ser passado na função date(). Data de início: 01/01/1970
+
+	$timeStamp = strtotime("2001-09-11"); //String para date
+	echo '<br>'.date("l d/m/Y", $timeStamp);
+
+	setlocale(LC_ALL, "pt_BR", "pt_BR.utf-8", "portuguese"); //Setar linguagem, região
+
+	echo '<br>'.strftime("%A %B"); //Formata uma hora/data de acordo com as configurações locais
+?>

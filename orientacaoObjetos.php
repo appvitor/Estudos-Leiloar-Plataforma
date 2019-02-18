@@ -67,8 +67,8 @@
 		}
 
 		public function setNumero($receberNumero){
-			$resultado = Documento::validarCpf($receberNumero); //Chamada do método dentro da Classe (método estático)
-			if($resultado === true){
+			$resultado = Documento::validarCpf($receberNumero); //Chamada do método dentro da Classe (método estático == permite ser acessado sem instancia de objeto)
+			if($resultado == true){
 				$this->numero = $receberNumero;
 			}
 			else{
@@ -124,9 +124,35 @@
 	}
 
 	$cpf = new Documento();
-	$cpf->setNumero('123.456.789-00');
+	$cpf->setNumero('61062279000');
 	echo'<br>';
 	var_dump($cpf->getNumero());
 
+	class Endereco {
+		private $logradouro;
+		private $numero;
+		private $cidade;
 
+		//Método construtor no php
+		public function __construct($log, $num, $cid){
+			$this->logradouro = $log;
+			$this->numero = $num;
+			$this->cidade = $cid;
+		}
+
+		public function __destruct(){
+			var_dump('DESTRUIR');
+		}
+
+		public function __toString(){
+			return $this->logradouro.', '.$this->numero.', '.$this->cidade;
+		}
+	}
+
+	$meuEndereco = new Endereco('Rua Camelias', '69', 'Curitiba');
+	echo '<br>';
+	var_dump($meuEndereco);
+	echo '<br>';
+	echo $meuEndereco; //chamada do método toString, que deve retornar um texto. Exemp: facilitar visualização de seu conteúdo
+	unset($meuEndereco); //Chamada do método desconstrutor, removendo ele da memória. Exemp: desconectar de um banco de dados, encerrar sessão de usuario
 ?>

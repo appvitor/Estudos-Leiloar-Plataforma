@@ -52,10 +52,10 @@
 		}
 	}
 
-	$veloster = new Carro();
-	$veloster->setModelo("Veloster");
+	$veloster = new Carro(); //instancia da classe Carro
+	$veloster->setModelo("Veloster"); //setando os valores para seus atributos
 	$veloster->setMotor("1.6 Turbo");
 	$veloster->setAno(2016);
 	echo '<br>';
-	print_r($veloster->exibir());
+	print_r($veloster->exibir()); //chamando o método que exibe seus atributos
 ?>

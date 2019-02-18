@@ -27,4 +27,31 @@
 	$funcionario = new Programador();
 	$funcionario->verDados();
 
+	class Documento {
+		private $numero;
+
+		public function __construct($numero){
+			$this->numero = $numero;
+		}
+		
+		public function getNumero(){
+			return $this->numero;
+		}
+
+	}
+
+	class Cpf extends Documento {
+
+		public function validar(){
+			$numeroCpf = $this->getNumero();
+			return true;
+		}
+
+	}
+
+	$doc = new Cpf('12345678900');
+	$doc->validar();
+	var_dump($doc->validar());
+	echo '<br>';
+	echo $doc->getNumero();
 ?>

@@ -17,6 +17,4 @@
 	}
 
 	echo json_encode($dados);
-
-
 ?>

@@ -1,0 +1,13 @@
+body {
+	font-family: "Trebuchet MS";
+	color: purple;
+	font-size: 17px;
+}
+#cabecalho {
+	display: flex;
+	justify-content: space-around;
+}
+#menu {
+	display: flex;
+	align-items: center;
+}

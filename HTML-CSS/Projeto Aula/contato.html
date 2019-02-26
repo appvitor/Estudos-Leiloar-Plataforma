@@ -2,19 +2,27 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>JS Turismo - Contato</title>
+	<title>JM Viagens - Contato</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/styleContato.css">
 </head>
 <body>
 	<div id="cabecalho">
 		<div>
-			<img src="imagens/logo.png">
+			<a href="index.html">
+				<img src="imagens/logo.png">
+			</a>
 		</div>	
 		<div id="menu">
-			<a href="index.html"> HOME | </a>
-			<a href="quemSomos.html"> QUEM SOMOS | </a>
-			<a href="contato.html"> CONTATO </a>
+			<div class="opcoesMenu">
+				<a href="index.html" class="linksMenu">HOME</a>
+			</div>
+			<div class="opcoesMenu">
+				<a href="quemSomos.html" class="linksMenu">QUEM SOMOS</a>
+			</div>
+			<div class="opcoesMenu">
+				<a href="contato.html" class="linksMenu">CONTATO</a>
+			</div>
 		</div>
 	</div>
 	<div id="espacoImagem">
@@ -24,7 +32,18 @@
 		<form>
 			<div class="formulario">
 				<div class="espacoFieldsets">
-					<fieldset class="fieldsets">
+					<fieldset>
+						<legend>Nome</legend>
+						<input type="text" name="campoNome" required>
+						<br>
+						<br>
+						<label>E-Mail</label>
+						<br>
+						<input type="email" name="campoEmail" required>
+					</fieldset>
+				</div>
+				<div class="espacoFieldsets">
+					<fieldset>
 						<legend>Gênero</legend>
 						<input type="radio" name="genero">
 						<label>Masculino</label>
@@ -38,8 +57,8 @@
 					</fieldset>
 				</div>
 				<div class="espacoFieldsets">
-					<fieldset class="fieldsets">
-						<legend>Tipo do contato</legend>
+					<fieldset>
+						<legend>Tipo do Contato</legend>
 						<input type="checkbox" name="checkOrcamento">
 						<label>Orçamento</label>
 						<br>
@@ -54,7 +73,7 @@
 					</fieldset>	
 				</div>
 				<div class="espacoFieldsets">
-					<fieldset class="fieldsets">
+					<fieldset>
 						<legend>Seu Estado</legend>
 						<select>
 							<option>PR</option>
@@ -65,12 +84,12 @@
 						<br>	
 						<label>Sua Mensagem</label>
 						<br>
-						<textarea></textarea>
+						<textarea placeholder="Escreva sua mensagem" required></textarea>
 					</fieldset>
 				</div>
 			</div>
 			<div class="formulario" id="espacoBotaoSubmit">
-				<input type="submit" name="botaoSubmit" value="Enviar">
+				<input type="submit" name="botaoSubmit" value="Enviar" id="botaoSubmit">
 			</div>
 		</form>
 	</div>

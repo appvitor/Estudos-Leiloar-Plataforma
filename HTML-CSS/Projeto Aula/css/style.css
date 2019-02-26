@@ -1,7 +1,8 @@
-body {
-	font-family: "Trebuchet MS";
-	color: purple;
+html {
+	font-family: "Comic Sans MS";
 	font-size: 17px;
+	background-color: #dbd6c5;
+	color: #2b818e;
 }
 #cabecalho {
 	display: flex;
@@ -11,18 +12,32 @@ body {
 	display: flex;
 	align-items: center;
 }
-#espacoImagem {
-	display: flex;
-	justify-content: center;
+.opcoesMenu {
+	text-align: center;
+	margin-right: 3%;
+	margin-left: 3%;
+}
+.linksMenu {
+	text-decoration: none;
+	white-space: nowrap;
+}
+.linksMenu:hover {
+	background-color: #f8aa00;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #conteudo {
 	display: flex;
-	flex-flow: column;
-	padding-left: 10%;
-	padding-right: 10%;
+	flex-direction: column;
+	align-items: center;
+	padding-left: 18%;
+	padding-right: 18%;
 	text-align: justify;
+}
+#imgPrincipal {
+	max-width: 100%;
+	height: auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #rodape {
 	text-align: center;
-
 }

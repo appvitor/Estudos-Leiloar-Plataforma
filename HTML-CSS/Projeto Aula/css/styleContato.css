@@ -2,13 +2,38 @@
 	display: flex;
 	justify-content: center;
 }
+#espacoImagem {
+	display: flex;
+	justify-content: center;
+}
 .espacoFieldsets {
 	margin-right: 2%;
 	margin-left: 2%;
 }
-.fieldsets {
+fieldset {
 	border: none;
+}
+textarea {
+	height: 9em;
+	width: 20em;
+	box-sizing: border-box;
+	resize: none;
 }
 #espacoBotaoSubmit {
 	margin: 1%;
+}
+#botaoSubmit {
+	width: 7%;
+	height: 2em;
+	border-radius: 15%;
+	border: none;
+	font-family: "Comic Sans MS";
+	color: #2b818e;
+	font-size: 16px;
+	font-weight: bolder;
+	cursor: pointer;
+	background-color: #f8aa00;
+}
+#botaoSubmit:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

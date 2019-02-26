@@ -1,0 +1,14 @@
+.formulario {
+	display: flex;
+	justify-content: center;
+}
+.espacoFieldsets {
+	margin-right: 2%;
+	margin-left: 2%;
+}
+.fieldsets {
+	border: none;
+}
+#espacoBotaoSubmit {
+	margin: 1%;
+}

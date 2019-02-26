@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title>JS Turismo - Contato</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/styleContato.css">
 </head>
 <body>
 	<div id="cabecalho">
@@ -16,55 +17,62 @@
 			<a href="contato.html"> CONTATO </a>
 		</div>
 	</div>
-	<img src="imagens/contato.png">
-	<div id="conteudo">
+	<div id="espacoImagem">
+		<img src="imagens/contato.png">
+	</div>
+	<div>
 		<form>
-			<div>
-				<label>Gênero</label>
-				<br>
-				<input type="radio" name="genero">
-				<label>Masculino</label>
-				<br>
-				<input type="radio" name="genero">
-				<label>Feminino</label>
-				<br>
-				<input type="radio" name="genero">
-				<label>Outros</label>
-				<br>
+			<div class="formulario">
+				<div class="espacoFieldsets">
+					<fieldset class="fieldsets">
+						<legend>Gênero</legend>
+						<input type="radio" name="genero">
+						<label>Masculino</label>
+						<br>
+						<input type="radio" name="genero">
+						<label>Feminino</label>
+						<br>
+						<input type="radio" name="genero">
+						<label>Outros</label>
+						<br>
+					</fieldset>
+				</div>
+				<div class="espacoFieldsets">
+					<fieldset class="fieldsets">
+						<legend>Tipo do contato</legend>
+						<input type="checkbox" name="checkOrcamento">
+						<label>Orçamento</label>
+						<br>
+						<input type="checkbox" name="checkPacotes">
+						<label>Pacotes</label>
+						<br>
+						<input type="checkbox" name="checkSugestoes">
+						<label>Sugestões</label>
+						<br>
+						<input type="checkbox" name="checkOutros">
+						<label>Outros</label>
+					</fieldset>	
+				</div>
+				<div class="espacoFieldsets">
+					<fieldset class="fieldsets">
+						<legend>Seu Estado</legend>
+						<select>
+							<option>PR</option>
+							<option>SC</option>
+							<option>SP</option>
+						</select>
+						<br>
+						<br>	
+						<label>Sua Mensagem</label>
+						<br>
+						<textarea></textarea>
+					</fieldset>
+				</div>
 			</div>
-			<div>
-				<br>
-				<label>Tipo do contato</label>
-				<br>
-				<input type="checkbox" name="checkOrcamento">
-				<label>Orçamento</label>
-				<br>
-				<input type="checkbox" name="checkPacotes">
-				<label>Pacotes</label>
-				<br>
-				<input type="checkbox" name="checkSugestoes">
-				<label>Sugestões</label>
-				<br>
-				<input type="checkbox" name="checkOutros">
-				<label>Outros</label>	
+			<div class="formulario" id="espacoBotaoSubmit">
+				<input type="submit" name="botaoSubmit" value="Enviar">
 			</div>
-			<div>
-				<label>Seu Estado</label>
-				<select>
-					<option>PR</option>
-					<option>SC</option>
-					<option>SP</option>
-				</select>
-				<br>
-				<br>	
-				<label>Sua Mensagem</label>
-				<br>
-				<textarea></textarea>
-				<br>
-				<br>
-				<input type="submit" name="botaoSubmit">
-			</div>
-		</form>			
+		</form>
 	</div>
 	<div id="rodape">
 		Todos os direitos reservados

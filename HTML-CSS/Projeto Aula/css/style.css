@@ -11,3 +11,18 @@ body {
 	display: flex;
 	align-items: center;
 }
+#espacoImagem {
+	display: flex;
+	justify-content: center;
+}
+#conteudo {
+	display: flex;
+	flex-flow: column;
+	padding-left: 10%;
+	padding-right: 10%;
+	text-align: justify;
+}
+#rodape {
+	text-align: center;
+
+}

@@ -1,8 +1,8 @@
-.formulario {
+#espacoImagem {
 	display: flex;
 	justify-content: center;
 }
-#espacoImagem {
+.formulario {
 	display: flex;
 	justify-content: center;
 }
@@ -13,18 +13,38 @@
 fieldset {
 	border: none;
 }
+input[type=text], input[type=email] {
+	border: none;
+	margin-bottom: 1.3em;
+	margin-top: 0.5em;
+	width: 15em;
+	height: 2em;
+}
+select {
+	width: 6.5em;
+	height: 2em;
+	text-align: center;
+	border: none;
+}
+.espacoRadiosChecks {
+	white-space: nowrap;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
 textarea {
 	height: 9em;
 	width: 20em;
 	box-sizing: border-box;
 	resize: none;
+	border: none;
 }
 #espacoBotaoSubmit {
 	margin: 1%;
 }
 #botaoSubmit {
-	width: 7%;
+	width: 7em;
 	height: 2em;
+	margin-bottom: 1.3em;
 	border-radius: 15%;
 	border: none;
 	font-family: "Comic Sans MS";
@@ -33,7 +53,8 @@ textarea {
 	font-weight: bolder;
 	cursor: pointer;
 	background-color: #f8aa00;
-}
-#botaoSubmit:hover {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#botaoSubmit:active {
+	box-shadow: none;
 }

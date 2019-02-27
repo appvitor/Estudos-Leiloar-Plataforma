@@ -33,58 +33,68 @@
 			<div class="formulario">
 				<div class="espacoFieldsets">
 					<fieldset>
-						<legend>Nome</legend>
-						<input type="text" name="campoNome" required>
-						<br>
-						<br>
+						<label>Nome</label>
+						<div>						
+							<input type="text" name="campoNome" required autofocus>
+						</div>	
 						<label>E-Mail</label>
-						<br>
-						<input type="email" name="campoEmail" required>
+						<div>
+							<input type="email" name="campoEmail" required>
+						</div>
+						<label>Estado</legend>
+						<div>
+							<select>
+								<option>PR</option>
+								<option>SC</option>
+								<option>SP</option>
+							</select>
+						</div>
 					</fieldset>
 				</div>
 				<div class="espacoFieldsets">
 					<fieldset>
 						<legend>Gênero</legend>
-						<input type="radio" name="genero">
-						<label>Masculino</label>
-						<br>
-						<input type="radio" name="genero">
-						<label>Feminino</label>
-						<br>
-						<input type="radio" name="genero">
-						<label>Outros</label>
-						<br>
+						<div class="espacoRadiosChecks">
+							<input type="radio" name="genero">
+							<label>Masculino</label>
+						</div>
+						<div class="espacoRadiosChecks">
+							<input type="radio" name="genero">
+							<label>Feminino</label>
+						</div>
+						<div class="espacoRadiosChecks">
+							<input type="radio" name="genero">
+							<label>Outros</label>
+						</div>
 					</fieldset>
 				</div>
 				<div class="espacoFieldsets">
 					<fieldset>
 						<legend>Tipo do Contato</legend>
-						<input type="checkbox" name="checkOrcamento">
-						<label>Orçamento</label>
-						<br>
-						<input type="checkbox" name="checkPacotes">
-						<label>Pacotes</label>
-						<br>
-						<input type="checkbox" name="checkSugestoes">
-						<label>Sugestões</label>
-						<br>
-						<input type="checkbox" name="checkOutros">
-						<label>Outros</label>
-					</fieldset>	
+						<div class="espacoRadiosChecks">
+							<input type="checkbox" name="checkOrcamento">
+							<label>Orçamento</label>
+						</div>
+						<div class="espacoRadiosChecks">
+							<input type="checkbox" name="checkPacotes">
+							<label>Pacotes</label>
+						</div>
+						<div class="espacoRadiosChecks">
+							<input type="checkbox" name="checkSugestoes">
+							<label>Sugestões</label>
+						</div>
+						<div class="espacoRadiosChecks">
+							<input type="checkbox" name="checkOutros">
+							<label>Outros</label>
+						</div>
+					</fieldset>
 				</div>
 				<div class="espacoFieldsets">
 					<fieldset>
-						<legend>Seu Estado</legend>
-						<select>
-							<option>PR</option>
-							<option>SC</option>
-							<option>SP</option>
-						</select>
-						<br>
-						<br>	
-						<label>Sua Mensagem</label>
-						<br>
-						<textarea placeholder="Escreva sua mensagem" required></textarea>
+						<legend>Sua Mensagem</legend>
+						<div>					
+							<textarea placeholder="Escreva aqui" required></textarea>
+						</div>
 					</fieldset>
 				</div>
 			</div>
@@ -94,7 +104,7 @@
 		</form>
 	</div>
 	<div id="rodape">
-		Todos os direitos reservados
+		Todos os direitos reservados.
 	</div>
 </body>
 </html>

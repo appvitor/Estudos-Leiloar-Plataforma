@@ -1,7 +1,7 @@
 html {
 	font-family: "Trebuchet MS";
 	font-size: 17px;
-	background-color: #dbd6c5;
+	background-color: #101b23;
 	color: #2b818e;
 }
 #inicioSite {
@@ -27,6 +27,9 @@ nav {
 .linksMenu:active {
 	color: #2b818e;
 	box-shadow: none;
+}
+.linksMenu:visited {
+	color: ;
 }
 #divisoria {
 	display: flex;

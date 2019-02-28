@@ -3,28 +3,23 @@
 <head>
 	<meta charset="utf-8">
 	<title>JM Viagens - Contato</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/styleContato.css">
 </head>
 <body>
-	<header id="cabecalho">
-		<div>
+	<div id="inicioSite">
+		<header>
 			<a href="index.html">
 				<img src="imagens/logo.png">
 			</a>
-		</div>	
-		<div id="menu">
-			<div class="opcoesMenu">
-				<a href="index.html" class="linksMenu">INÍCIO</a>
-			</div>
-			<div class="opcoesMenu">
-				<a href="quemSomos.html" class="linksMenu">QUEM SOMOS</a>
-			</div>
-			<div class="opcoesMenu">
-				<a href="contato.html" class="linksMenu">CONTATO</a>
-			</div>
-		</div>
-	</header>
+		</header>
+		<nav>
+			<a href="index.html" class="linksMenu">INÍCIO</a>
+			<a href="quemSomos.html" class="linksMenu">QUEM SOMOS</a>
+			<a href="contato.html" class="linksMenu">CONTATO</a>
+		</nav>
+	</div>
 	<div id="espacoImagem">
 		<img src="imagens/contato.png">
 	</div>
@@ -32,15 +27,17 @@
 		<form>
 			<div class="formulario">
 				<div class="espacoFieldsets">
-					<fieldset>
-						<label>Nome</label>
-						<div>						
-							<input type="text" name="campoNome" required autofocus>
-						</div>	
-						<label>E-Mail</label>
-						<div>
-							<input type="email" name="campoEmail" required>
-						</div>
+					<fieldset>										
+						<label>Nome
+							<div>
+								<input type="text" name="campoNome" title="Digite seu nome" required autofocus>
+							</div>
+						</label>
+						<label>E-Mail
+							<div>
+								<input type="email" name="campoEmail" title="Digite seu E-Mail" required>
+							</div>
+						</label>
 						<label>Estado</legend>
 						<div>
 							<select>
@@ -93,7 +90,7 @@
 					<fieldset>
 						<legend>Sua Mensagem</legend>
 						<div>					
-							<textarea placeholder="Escreva aqui" required></textarea>
+							<textarea title="Digite aqui a sua mensagem" required></textarea>
 						</div>
 					</fieldset>
 				</div>
@@ -104,7 +101,7 @@
 		</form>
 	</div>
 	<footer id="rodape">
-		Todos os direitos reservados.
-	</footer>>
+		<p> &copy; <time datetime="2019">2019</time> - Todos os direitos reservados.</p>
+	</footer>
 </body>
 </html>

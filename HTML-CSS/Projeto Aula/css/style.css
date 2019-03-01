@@ -22,14 +22,14 @@ nav {
 	border-radius: 0.4em;
 }
 .linksMenu:hover {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
 }
 .linksMenu:active {
 	color: #2b818e;
 	box-shadow: none;
 }
 .linksMenu:visited {
-	color: ;
+	color: #ffff;
 }
 #divisoria {
 	display: flex;

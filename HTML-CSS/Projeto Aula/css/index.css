@@ -1,0 +1,21 @@
+#imgPrincipal {
+	max-width: 75%;
+	height: auto;
+	margin-top: 2.5%;
+	margin-bottom: 3%;
+	box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+#conteudo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-left: 18%;
+	padding-right: 18%;
+	text-align: left;
+}
+h2 {
+	padding: 0.7%;
+	background-color: #2b818e;
+	border-radius: 0.7em;
+	border: 1px solid #ffff;
+}

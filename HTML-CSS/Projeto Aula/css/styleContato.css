@@ -15,7 +15,7 @@ input[type=text], input[type=email], select{
 	margin-bottom: 1.3em;
 	margin-top: 0.5em;
 	border: none;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
 }
 select {
 	width: 6.5em;
@@ -38,7 +38,7 @@ textarea {
 	resize: none;
 	box-sizing: border-box;
 	border: none;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
 }
 #espacoBotaoSubmit {
 	margin: 1em;
@@ -55,7 +55,7 @@ textarea {
 	font-weight: bolder;
 	cursor: pointer;
 	background-color: #f8aa00;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
 }
 #botaoSubmit:active {
 	box-shadow: none;

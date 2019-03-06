@@ -9,7 +9,7 @@
 fieldset {
 	border: none;
 }
-input[type=text], input[type=email], select{
+input[type=text], input[type=email], input[type=tel], select{
 	width: 15em;
 	height: 2em;
 	margin-bottom: 1.3em;
@@ -33,7 +33,7 @@ select:active {
 	margin-bottom: 0.5em;
 }
 textarea {
-	height: 9em;
+	height: 13em;
 	width: 20em;
 	resize: none;
 	box-sizing: border-box;

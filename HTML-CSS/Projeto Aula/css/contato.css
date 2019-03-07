@@ -3,6 +3,10 @@
 	flex-direction: row;
 	align-content: center;
 	justify-content: center;
+
+}
+form {
+	margin-right: 6.5%;
 }
 .formulario {
 	display: flex;
@@ -40,8 +44,8 @@ select:active {
 	align-items: center;
 }
 textarea {
-	height: 9em;
-	width: 20em;
+	height: 10em;
+	width: 25em;
 	resize: none;
 	margin-top: 0.5em;
 	box-sizing: border-box;
@@ -65,4 +69,26 @@ textarea {
 }
 #botaoSubmit:active {
 	box-shadow: none;
+}
+#espacoEmpresa {
+	display: flex;
+	flex-direction: column; 
+	align-content: center;
+	text-align: center;
+	width: 30%;
+}
+#imagemMapa {
+	width: 100%;
+	height: auto;
+	box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+h2 {
+	margin-bottom: 0.5em;
+	color: #f8aa00;
+}
+h4 {
+	padding: 0.4em;
+	background-color: #2b818e;
+	border-radius: 0.7em;
+	border: 1px solid #ffff;
 }

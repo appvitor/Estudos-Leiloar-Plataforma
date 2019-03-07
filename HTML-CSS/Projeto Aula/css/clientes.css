@@ -6,18 +6,18 @@
 	text-align: center;
 	white-space: nowrap;
 }
-.logos {
+.espacoLogos {
 	display: flex;
 	flex-direction: column;
 	margin-left: 5%;
 	margin-right: 5%;
 }
-a {
+.logos {
 	margin-top: 2%;
 	margin-bottom: 5%;
 	border-radius: 5%;
 	padding: 0.5em;
 }
-a:hover {
+.logos:hover {
 	box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
 }

@@ -1,9 +1,13 @@
 #conteudo {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	padding-left: 18%;
 	padding-right: 18%;
 	text-align: justify;
+}
+#espacoApresentacao {
+	width: 85%;
+	margin-right: 3%;
 }
 #espacoVantagens {
 	display: flex;
@@ -33,4 +37,11 @@ ul {
 li {
 	display: block;
 	padding: 0.4em;
+}
+#listaFuncionalidades {
+	width: 100%;
+	color: #f8aa00;
+}
+#listaInfraestrutura {
+	color: #2b818e;
 }

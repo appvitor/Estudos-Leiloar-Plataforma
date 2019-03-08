@@ -1,8 +1,8 @@
 #conteudo {
 	display: flex;
 	flex-direction: row;
-	padding-left: 18%;
-	padding-right: 18%;
+	margin-left: 18%;
+	margin-right: 18%;
 	text-align: justify;
 }
 #espacoApresentacao {
@@ -13,6 +13,7 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	margin-left: 3%;
 }
 .espacoListas {
 	margin-top: 3%;
@@ -38,8 +39,10 @@ li {
 	display: block;
 	padding: 0.4em;
 }
+#espacoListaFuncionalidades {
+	width: 200%;
+}
 #listaFuncionalidades {
-	width: 100%;
 	color: #f8aa00;
 }
 #listaInfraestrutura {

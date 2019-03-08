@@ -3,7 +3,6 @@
 	flex-direction: row;
 	align-content: center;
 	justify-content: center;
-
 }
 form {
 	margin-right: 6.5%;
@@ -20,23 +19,20 @@ form {
 fieldset {
 	border: none;
 }
-input[type=text], input[type=email], input[type=tel], select{
+input[type=text], input[type=email], input[type=tel], select, textarea{
 	width: 15em;
 	height: 2em;
 	margin-bottom: 1.3em;
 	margin-top: 0.5em;
 	border: none;
 	box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+	color: #2b818e;
 }
 select {
 	width: 6.5em;
 	height: 2em;
 	text-align: center;
-	color: #2b818e;
 	font-weight: lighter;
-}
-select:active {
-	border: none;
 }
 #espacoFimFormulario {
 	display: flex;
@@ -46,11 +42,9 @@ select:active {
 textarea {
 	height: 10em;
 	width: 25em;
+	margin-bottom: 0.3em;
 	resize: none;
-	margin-top: 0.5em;
 	box-sizing: border-box;
-	border: none;
-	box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
 }
 #botaoSubmit {
 	width: 7em;

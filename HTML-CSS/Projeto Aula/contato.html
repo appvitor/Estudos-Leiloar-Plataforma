@@ -105,7 +105,18 @@
 		map = new google.maps.Map(document.getElementById('map'), {
 		  center: {lat: -23.42139, lng: -51.92669},
 		  zoom: 15,
-		  disableDefaultUI: true
+		  disableDefaultUI: true,
+		  styles: [
+	          {
+	            featureType: 'poi.business',
+	            stylers: [{visibility: 'off'}]
+	          },
+	          {
+	            featureType: 'transit',
+	            elementType: 'labels.icon',
+	            stylers: [{visibility: 'off'}]
+	          }
+		  ]
 		});
 
 		marker = new google.maps.Marker({
@@ -114,20 +125,10 @@
 			title: 'Plataforma Leiloar'
 		});
 
-	    styles = {
-	        default: null,
-	        hide: [
-	          {
-	            featureType: 'poi',
-	            stylers: [{visibility: 'off'}]
-	          },
-	          {
-	            featureType: 'transit',
-	            elementType: 'labels.icon',
-	            stylers: [{visibility: 'off'}]
-	          }
-	        ]
-	    };
+	    var stylers = [
+
+	    ]
+	    
 	}
 </script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtRpNeTqWzVyhwAgyHHbi_OcJNOz7e7XQ&callback=initMap">

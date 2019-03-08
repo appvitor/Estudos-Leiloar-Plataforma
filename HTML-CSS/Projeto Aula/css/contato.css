@@ -26,6 +26,7 @@ input[type=text], input[type=email], input[type=tel], select, textarea{
 	margin-bottom: 1.3em;
 	margin-top: 0.5em;
 	border: none;
+	border-radius: 1%;
 	box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
 	color: #2b818e;
 }
@@ -75,6 +76,7 @@ textarea {
 #map {
 	height: 100%;
 	width: auto;
+	border-radius: 2%;
 	box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
 }
 h2 {

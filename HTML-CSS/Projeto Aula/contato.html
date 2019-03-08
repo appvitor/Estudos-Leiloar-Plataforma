@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
 	<meta charset="utf-8">
+
 	<title>Plataforma Lieloar - Contato</title>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -89,12 +90,45 @@
 		</form>
 		<div id="espacoEmpresa">
 			<h2>+55 44 3354-2636</h2>
-			<h4>Avenida Brasil, 2538, Sobreloja 08 - Maringá - PR</h4>
-			<img src="imagens/maps.png" id="imagemMapa">
+			<h4>Avenida Brasil, 2538, Sobreloja 08 - Maringá - PR</h4>		
+			<div id="map"></div>
+			<!--<img src="imagens/maps.png" id="imagemMapa">-->
 		</div>
 	</div>
 	<footer id="rodape">
 		<p> &copy; <time datetime="2019">2019</time> - Todos os direitos reservados.</p>
 	</footer>
 </body>
+<script>
+	var map;
+	function initMap() {
+		map = new google.maps.Map(document.getElementById('map'), {
+		  center: {lat: -23.42139, lng: -51.92669},
+		  zoom: 15
+		});
+
+		marker = new google.maps.Marker({
+			position: {lat: -23.421644, lng: -51.926777},
+			map: map,
+			title: 'Plataforma Leiloar'
+		});
+
+	    styles = {
+	        default: null,
+	        hide: [
+	          {
+	            featureType: 'poi',
+	            stylers: [{visibility: 'off'}]
+	          },
+	          {
+	            featureType: 'transit',
+	            elementType: 'labels.icon',
+	            stylers: [{visibility: 'off'}]
+	          }
+	        ]
+	    };
+	}
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtRpNeTqWzVyhwAgyHHbi_OcJNOz7e7XQ&callback=initMap">
+</script>
 </html>

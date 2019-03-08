@@ -104,7 +104,8 @@
 	function initMap() {
 		map = new google.maps.Map(document.getElementById('map'), {
 		  center: {lat: -23.42139, lng: -51.92669},
-		  zoom: 15
+		  zoom: 15,
+		  disableDefaultUI: true
 		});
 
 		marker = new google.maps.Marker({

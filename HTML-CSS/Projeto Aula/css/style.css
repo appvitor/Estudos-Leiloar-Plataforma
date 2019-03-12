@@ -1,4 +1,4 @@
-html {
+html, body {
 	font-family: "Trebuchet MS";
 	font-size: 0.9vw;
 	background-color: #101b23;
@@ -25,6 +25,8 @@ nav {
 }
 .linksMenu:hover {
 	transition: 0.7s;
+	text-decoration-line: none;
+	color: #ffff;
 	box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
 }
 .linksMenu:active {

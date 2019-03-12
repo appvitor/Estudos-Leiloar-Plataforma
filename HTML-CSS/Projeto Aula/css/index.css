@@ -1,21 +1,42 @@
+@keyframes animacao-fundo {
+	from {
+		background-blend-mode: normal;
+	}
+	to {
+		background-blend-mode: color;
+		background-color: rgba(0, 0, 0, 0.7);
+	}
+}
+@keyframes animacao-conteudo {
+	from {
+		opacity: 0.0;
+	}
+	to {
+		visibility: visible;
+		opacity: 1.0;
+	}
+}
 #conteudo {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: flex-end;
 	text-align: center;
-	margin-left: 10%;
-	margin-right: 10%;
+	margin-left: 17%;
+	margin-right: 17%;
 	margin-bottom: 3%;
 	padding: 1%;
 	height: 30em;
+	border-radius: 0.8%;
 	background: url("../imagens/sistema.png");
-	background-color: rgba(0, 0, 0, 0.7);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100% 100%;
-	background-blend-mode: color;
 	box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+	animation-name: animacao-fundo;
+	animation-duration: 3.5s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
 }
 /*
 #imagemPrincipal {
@@ -30,15 +51,26 @@
 #espacoImagensMenores {
 	display: flex;
 	flex-direction: column;
-	visibility: hidden;
+	margin-left: 1%;
+	margin-right: 1%;
+	margin-bottom: 1%;
 }
 .imagensMenores {
-	border-radius: 10%;
 	width: 5em;
 	height: auto;
+	border-radius: 10%;
+	visibility: hidden;
+	animation-name: animacao-conteudo;
+	animation-duration: 3.5s;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
 }
 .textoImagensMenores {
-
+	visibility: hidden;
+	animation-name: animacao-conteudo;
+	animation-duration: 3.5s;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
 }
 #espacoTexto {
 	display: flex;

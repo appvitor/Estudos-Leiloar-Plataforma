@@ -6,7 +6,7 @@
 	text-align: justify;
 }
 #espacoApresentacao {
-	width: 80%;
+	width: 68%;
 	margin-right: 3%;
 }
 #espacoVantagens {
@@ -40,7 +40,7 @@ li {
 	padding: 0.4em;
 }
 #espacoListaFuncionalidades {
-	width: 200%;
+	width: 115%;
 }
 #listaFuncionalidades {
 	color: #f8aa00;

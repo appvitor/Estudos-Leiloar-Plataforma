@@ -1,10 +1,13 @@
-html, body {
+html {
 	height: 100vh;
+}
+body {
+	margin: 0;
+	padding: 0;
 	font-family: "Trebuchet MS";
 	font-size: 0.9vw;
 	background-color: #101b23;
 	color: #ffff;
-	
 }
 #inicioSite {
 	display: flex;

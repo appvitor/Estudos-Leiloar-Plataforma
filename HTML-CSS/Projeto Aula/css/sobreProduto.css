@@ -11,7 +11,6 @@
 }
 #espacoVantagens {
 	display: flex;
-	flex-direction: row;
 	justify-content: center;
 	margin-left: 3%;
 }
@@ -47,4 +46,45 @@ li {
 }
 #listaInfraestrutura {
 	color: #2b818e;
+}
+@media screen and (max-width: 1280px) {
+	#conteudo {
+		flex-direction: column;
+		margin-left: 11%;
+		margin-right: 11%;
+	}
+	#espacoApresentacao {
+		width: 100%;
+		margin-right: 0;
+	}
+	#espacoVantagens {
+		margin: 0;
+	}
+	.espacoListas {
+		margin-right: 2%;
+		margin-left: 2%;
+	}
+	#espacoListaFuncionalidades {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 992px) {
+	#conteudo {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+}
+@media screen and (max-width: 600px) {
+	#conteudo {
+		flex-direction: column;
+		margin-left: 7%;
+		margin-right: 7%;
+	}
+	#espacoVantagens {
+		flex-direction: column;
+		margin: 0;
+	}
+	.espacoListas {
+		margin: 0;
+	}
 }

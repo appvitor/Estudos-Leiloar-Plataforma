@@ -22,3 +22,26 @@
 	transition: 0.7s;
 	box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
 }
+@media screen and (max-width: 1280px) {
+	#conteudo {
+		flex-wrap: wrap;
+	}
+	#espacoLogos2 {
+		order: 3;
+		flex-direction: row;
+		flex-grow: 0;
+		flex-basis: 50%;
+		margin-top: 2%;
+	}
+}
+@media screen and (max-width: 992px) {
+	#conteudo {
+
+	}
+}
+@media screen and (max-width: 600px) {
+	#conteudo {
+		flex-direction: column;
+		margin: 0;
+	}
+}

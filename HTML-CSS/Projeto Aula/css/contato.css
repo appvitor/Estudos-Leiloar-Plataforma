@@ -57,7 +57,6 @@ textarea {
 	border: none;
 	font-family: "Trebuchet MS";
 	color: #2b818e;
-	font-size: 0.9vw;
 	font-weight: bolder;
 	cursor: pointer;
 	background-color: #f8aa00;
@@ -89,4 +88,41 @@ h4 {
 	background-color: #2b818e;
 	border-radius: 0.7em;
 	border: 1px solid #ffff;
-} 	
+}
+@media screen and (max-width: 1200px) {
+
+}
+@media screen and (max-width: 992px) {
+
+}
+@media screen and (max-width: 600px) {
+}
+@media screen and (max-width: 375px) {
+	#conteudo {
+		flex-direction: column;
+	}
+	form {
+		margin-right: 0; 
+	}
+	.formulario {
+		flex-direction: column;
+		align-content: center;
+		justify-content: center;
+	}
+	.espacoFieldsets {
+		text-align: left;
+	}
+	input[type=text], input[type=email], input[type=tel] {
+		width: 100%;
+	}
+	select {
+		width: 12em;
+		text-align-last: center;
+	}
+	textarea{
+		width: 100%;
+	}
+	#espacoEmpresa {
+		width: 100%;
+	}
+}

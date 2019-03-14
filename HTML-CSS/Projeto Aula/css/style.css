@@ -74,6 +74,15 @@ nav {
 	display: flex;
 	justify-content: center;
 }
+@media screen and (pointer: coarse){
+	#linksMenu:hover {
+		transition: none;
+		box-shadow: none;
+	}
+	#linksMenu:active {
+		box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+	}
+}
 @media screen and (max-width: 1200px) {
 	#inicioSite {
 		display: flex;
@@ -93,12 +102,6 @@ nav {
 	}
 	#textoDivisoria {
 		padding-left: 11%;
-	}
-}
-@media screen and (max-width: 1200px) and (pointer: coarse){
-	#linksMenu:hover {
-		transition: none;
-		box-shadow: none;
 	}
 }
 @media screen and (max-width: 992px) {
@@ -137,6 +140,7 @@ nav {
 		margin-left: 0.2em;
 	}
 	#textoDivisoria {
+		margin-top: 2%;
 		padding-left: 0;
 		text-align: center;
 	}

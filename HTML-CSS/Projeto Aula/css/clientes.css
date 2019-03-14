@@ -22,26 +22,61 @@
 	transition: 0.7s;
 	box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
 }
+@media screen and (pointer: coarse) {
+	.logos:hover {
+		transition: none;
+		box-shadow: none;
+	}
+	.logos:active {
+		box-shadow: box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+	}
+}
 @media screen and (max-width: 1200px) {
 	#conteudo {
-		flex-wrap: wrap;
+		justify-content: space-around;
 	}
-	#espacoLogos2 {
-		order: 3;
-		flex-direction: row;
-		flex-grow: 0;
-		flex-basis: 50%;
-		margin-top: 2%;
+	.espacoLogos {
+		margin-right: 0;
+		margin-left: 0;
+		padding: 0.2em;
+	}
+	.imagemLogos {
+		width: 52%;
 	}
 }
 @media screen and (max-width: 992px) {
 	#conteudo {
-
+		flex-wrap: wrap;
+		margin-right: 1%;
+		margin-left: 1%;
+	}
+	#espacoLogos2 {
+		order: 3;
+		flex-direction: row;
+		flex-grow: 1;
+		margin-top: 2%;
+	}
+	.imagemLogos {
+		width: 70%;
+	}
+	#espacoLogos2 .imagemLogos {
+		width: 90%;
 	}
 }
 @media screen and (max-width: 600px) {
 	#conteudo {
 		flex-direction: column;
 		margin: 0;
+	}
+	#espacoLogos2 {
+		flex-direction: column;
+		flex-basis: auto;
+		flex-grow: 0;
+	}
+	.imagemLogos {
+		width: 60%;
+	}
+	#espacoLogos2 .imagemLogos {
+		width: 60%;
 	}
 }

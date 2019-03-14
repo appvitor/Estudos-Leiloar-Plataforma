@@ -1,18 +1,18 @@
 #conteudo {
 	display: flex;
 	flex-direction: row;
-	margin-left: 18%;
-	margin-right: 18%;
+	margin-left: 15%;
+	margin-right: 15%;
 	text-align: justify;
 }
 #espacoApresentacao {
 	width: 68%;
-	margin-right: 3%;
+	margin-right: 2%;
 }
 #espacoVantagens {
 	display: flex;
 	justify-content: center;
-	margin-left: 3%;
+	margin-left: 2%;
 }
 .espacoListas {
 	margin-top: 3%;
@@ -47,11 +47,11 @@ li {
 #listaInfraestrutura {
 	color: #2b818e;
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1200px) {
 	#conteudo {
 		flex-direction: column;
-		margin-left: 11%;
-		margin-right: 11%;
+		margin-left: 9%;
+		margin-right: 9%;
 	}
 	#espacoApresentacao {
 		width: 100%;
@@ -70,15 +70,15 @@ li {
 }
 @media screen and (max-width: 992px) {
 	#conteudo {
-		margin-left: 10%;
-		margin-right: 10%;
+		margin-left: 7%;
+		margin-right: 7%;
 	}
 }
 @media screen and (max-width: 600px) {
 	#conteudo {
 		flex-direction: column;
-		margin-left: 7%;
-		margin-right: 7%;
+		margin-left: 5%;
+		margin-right: 5%;
 	}
 	#espacoVantagens {
 		flex-direction: column;
@@ -86,4 +86,7 @@ li {
 	.espacoListas {
 		margin: 0;
 	}
+}
+@media screen and (max-width: 1200px) and (pointer: coarse) {
+
 }

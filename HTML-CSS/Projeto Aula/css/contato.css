@@ -30,8 +30,12 @@ input[type=text], input[type=email], input[type=tel], select, textarea{
 	box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
 	color: #2b818e;
 }
+.espacoSelects {
+	display: flex;
+	justify-content: center;
+}
 select {
-	width: 6.5em;
+	width: 10em;
 	height: 2em;
 	text-align: center;
 	font-weight: lighter;
@@ -112,10 +116,6 @@ h4 {
 	input[type=text], input[type=email], input[type=tel] {
 		width: 100%;
 	}
-	.espacoSelects {
-		display: flex;
-		justify-content: center;
-	}
 	select {
 		width: 12em;
 		text-align-last: center;
@@ -127,9 +127,12 @@ h4 {
 		width: 100%;
 	}
 	#espacoEmpresa {
+		display: block;
+		width: auto;
+		
 		margin-top: 8%;
-		width: 100%;
-		align-content: space-around;
+		margin-right: 5%;
+		margin-left: 5%;
 	}
 }
 @media screen and (max-width: 375px) {

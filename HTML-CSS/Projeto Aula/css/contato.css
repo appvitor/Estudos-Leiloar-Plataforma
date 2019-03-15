@@ -127,9 +127,8 @@ h4 {
 		width: 100%;
 	}
 	#espacoEmpresa {
-		display: block;
 		width: auto;
-		
+		height: 30em;
 		margin-top: 8%;
 		margin-right: 5%;
 		margin-left: 5%;

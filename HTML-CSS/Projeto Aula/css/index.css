@@ -77,10 +77,66 @@
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
+	text-align: center;
 }
 h2 {
 	padding: 0.4em;
 	background-color: #2b818e;
 	border-radius: 0.7em;
 	border: 1px solid #ffff;
+}
+@media screen and (max-width: 1200px) {
+
+}
+@media screen and (max-width: 992px) {
+
+}
+@media screen and (max-width: 600px) {
+	@keyframes animacao-fundo {
+		from {
+			background-blend-mode: normal;
+		}
+		to {
+			background-blend-mode: color;
+			background-color: rgba(16, 27, 35, 0.8);
+		}
+	}
+	@keyframes animacao-conteudo {
+		from {
+			opacity: 0.0;
+		}
+		to {
+			visibility: visible;
+			opacity: 1.0;
+		}
+	}
+	body {
+		background: url("../imagens/sistema.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		animation-name: animacao-fundo;
+		animation-duration: 3.5s;
+		animation-delay: 1s;
+		animation-fill-mode: forwards;
+	}
+	#conteudo {
+		background: none;
+		animation: none;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		flex-wrap: wrap;
+		height: auto;
+		margin: none;
+		box-shadow: none;
+	}
+	#espacoTexto {
+		margin-right: 3%;
+		margin-left: 3%;
+	}
+	h3 {
+		margin-right: 7%;
+		margin-left: 7%;
+	}
 }

@@ -38,6 +38,7 @@ select {
 	width: 10em;
 	height: 2em;
 	text-align: center;
+	text-align-last: center;
 	font-weight: lighter;
 }
 #espacoFimFormulario {
@@ -97,11 +98,21 @@ h4 {
 
 }
 @media screen and (max-width: 992px) {
-	.formulario {
+	#conteudo {
 		flex-direction: column;
 	}
 	form {
-		margin-right: 0; 
+		margin-right: 0;
+	}
+	#espacoFimFormulario {
+		width: 100%;
+	}
+	#espacoEmpresa {
+		width: auto;
+		height: 30em;
+		margin-top: 5%;
+		margin-right: 10%;
+		margin-left: 10%;
 	}
 }
 @media screen and (max-width: 600px) {
@@ -118,7 +129,6 @@ h4 {
 	}
 	select {
 		width: 12em;
-		text-align-last: center;
 	}
 	#espacoFimFormulario fieldset {
 		width: 90%;
@@ -127,12 +137,8 @@ h4 {
 		width: 100%;
 	}
 	#espacoEmpresa {
-		width: auto;
-		height: 30em;
 		margin-top: 8%;
 		margin-right: 5%;
 		margin-left: 5%;
 	}
-}
-@media screen and (max-width: 375px) {
 }

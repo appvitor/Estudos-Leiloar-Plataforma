@@ -93,36 +93,44 @@ h4 {
 
 }
 @media screen and (max-width: 992px) {
-
-}
-@media screen and (max-width: 600px) {
-}
-@media screen and (max-width: 375px) {
-	#conteudo {
+	.formulario {
 		flex-direction: column;
 	}
 	form {
 		margin-right: 0; 
+	}
+}
+@media screen and (max-width: 600px) {
+	#conteudo {
+		flex-direction: column;
 	}
 	.formulario {
 		flex-direction: column;
 		align-content: center;
 		justify-content: center;
 	}
-	.espacoFieldsets {
-		text-align: left;
-	}
 	input[type=text], input[type=email], input[type=tel] {
 		width: 100%;
+	}
+	.espacoSelects {
+		display: flex;
+		justify-content: center;
 	}
 	select {
 		width: 12em;
 		text-align-last: center;
 	}
-	textarea{
+	#espacoFimFormulario fieldset {
+		width: 90%;
+	}
+	textarea {
 		width: 100%;
 	}
 	#espacoEmpresa {
+		margin-top: 8%;
 		width: 100%;
+		align-content: space-around;
 	}
+}
+@media screen and (max-width: 375px) {
 }

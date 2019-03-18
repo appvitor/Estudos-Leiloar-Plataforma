@@ -11,11 +11,7 @@ form {
 .formulario {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
-}
-.espacoFieldsets {
-	margin-right: 2%;
-	margin-left: 2%;
+	justify-content: space-between;
 }
 fieldset {
 	border: none;
@@ -31,9 +27,7 @@ input[type=text], input[type=email], input[type=tel], select, textarea{
 	color: #2b818e;
 }
 select {
-	height: 2em;
 	width: 100%;
-	text-align: center;
 	text-align-last: center;
 	font-weight: lighter;
 }

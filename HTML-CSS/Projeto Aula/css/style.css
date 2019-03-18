@@ -49,16 +49,14 @@ nav {
 	height: 0.6em;
 }
 #parteMenor {
-	min-width: 30%;
-	margin-left: 4em;
+	min-width: 39.9%;
 	background-color: #f8aa00;
 }
 #parteDoMeio {
 	min-width: 0.2%;
 }
 #parteMaior {
-	min-width: 50%;
-	margin-right: 4em;
+	min-width: 59.9%;
 	background-color: #2b818e;
 }
 #textoDivisoria {
@@ -89,30 +87,11 @@ nav {
 		flex-direction: row;
 		justify-content: space-around;
 	}
-	#parteMenor {
-		min-width: 37%;
-		margin-left: 1em;
-	}
-	#parteDoMeio {
-		min-width: 0.5%;
-	}
-	#parteMaior {
-		min-width: 57%;
-		margin-right: 1em;
-	}
 	#textoDivisoria {
 		padding-left: 11%;
 	}
 }
 @media screen and (max-width: 992px) {
-	#parteMenor {
-		min-width: 39%;
-		margin-left: 1em;
-	}
-	#parteMaior {
-		min-width: 59%;
-		margin-right: 1em;
-	}
 	#textoDivisoria {
 		padding-left: 7%;
 	}

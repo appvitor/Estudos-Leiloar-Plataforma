@@ -12,7 +12,6 @@ form {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: center;
 }
 fieldset {
 	border: none;
@@ -39,7 +38,7 @@ select {
 }
 textarea {
 	height: 10em;
-	width: 33.5em;
+	width: 38em;
 	margin-bottom: 0.3em;
 	resize: none;
 	box-sizing: border-box;
@@ -86,62 +85,34 @@ h4 {
 	border: 1px solid #ffff;
 }
 @media screen and (max-width: 1200px) {
-	#textoDivisoria{
-		margin-bottom: 0.5em;
-	}
-	form {
-		margin-right: 5%;
-	}
-	#espacoEmpresa {
-		height: 32em;
-	}
-	h4 {
-		margin-top: 0.5em;
-	}
-	#rodape p {
-		margin-top: 0.5em;
-		margin-bottom: 0.2em;
-	}
+
 }
 @media screen and (max-width: 992px) {
-	#conteudo {
-		flex-direction: column;
-	}
-	form {
-		margin-right: 0;
-	}
-	#espacoFimFormulario {
-		width: 100%;
-	}
-	#espacoEmpresa {
-		width: auto;
-		height: 30em;
-		margin-top: 5%;
-		margin-right: 10%;
-		margin-left: 10%;
-	}
+
 }
 @media screen and (max-width: 600px) {
 	#conteudo {
 		flex-direction: column;
+		align-items: center;
 	}
+	form {
+		margin: 0;
+	}
+
 	.formulario {
 		flex-direction: column;
-		align-content: center;
-		justify-content: center;
+		justify-content: space-around;
+		align-items: center;
 	}
-	input[type=text], input[type=email], input[type=tel] {
-		width: 100%;
-	}
-	#espacoFimFormulario fieldset {
-		width: 90%;
+	#espacoFimFormulario {
+		flex-direction: column;
+		justify-content: space-around;
 	}
 	textarea {
 		width: 100%;
 	}
 	#espacoEmpresa {
-		margin-top: 8%;
-		margin-right: 5%;
-		margin-left: 5%;
+		width: 90%;
+		height: 35em;
 	}
 }

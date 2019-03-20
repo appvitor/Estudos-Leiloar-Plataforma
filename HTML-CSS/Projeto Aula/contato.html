@@ -30,67 +30,80 @@
 	</div>	
 	<p id="textoDivisoria">Contato</p>
 	<div id="conteudo">
-		<form>
-			<div class="formulario">
-				<fieldset>
-					<label>Nome
-						<div>
-							<input type="text" name="campoNome" title="Digite seu nome" required autofocus>
-						</div>
-					</label>
-					<label>E-Mail
-						<div>
-							<input type="email" name="campoEmail" title="Digite seu E-Mail" required>
-						</div>
-					</label>
-					<label>Telefone
-						<div>							
-							<input type="tel" name="campoTelefone" minlength="10" maxlength="11" title="Digite um Telefone">
-						</div>
-					</label>
-				</fieldset>
-				<fieldset>
-					<label>Estado
-						<div>
-							<select>
-								<option>PR</option>
-								<option>SC</option>
-								<option>SP</option>
-							</select>
-						</div>
-					</label>
-					<label>Cidade
-						<div>
-							<select>
-								<option>Maringá</option>
-								<option>Itapema</option>
-								<option>São Paulo</option>
-							</select>
-						</div>
-					</label>
-					<label>Assunto
-						<div>
-							<input type="text" name="campoAssunto" required>
-						</div>
-					</label>
-				</fieldset>
-			</div>
-			<div id="espacoFimFormulario">
-				<fieldset>
-					<label>Sua Mensagem
-						<div>					
-							<textarea title="Digite aqui a sua mensagem" required></textarea>
-						</div>
-					</label>
-				</fieldset>
-				<input type="submit" name="botaoSubmit" value="Enviar" id="botaoSubmit">
-			</div>
-		</form>
+		<div class="formulario">
+			<form>
+				<ul>
+					<li>
+						<label>Nome
+							<div>
+								<input type="text" name="campoNome" title="Digite seu nome" required autofocus>
+							</div>
+						</label>
+					</li>
+					<li>					
+						<label>E-Mail
+							<div>
+								<input type="email" name="campoEmail" title="Digite seu E-Mail" required>
+							</div>
+						</label>
+					</li>
+					<li>					
+						<label>Telefone
+							<div>							
+								<input type="tel" name="campoTelefone" minlength="10" maxlength="11" title="Digite um Telefone">
+							</div>
+						</label>
+					</li>
+				</ul>
+				<ul>					
+					<li>						
+						<label>Estado
+							<div>
+								<select>
+									<option>PR</option>
+									<option>SC</option>
+									<option>SP</option>
+								</select>
+							</div>
+						</label>
+					</li>
+					<li>						
+						<label>Cidade
+							<div>
+								<select>
+									<option>Maringá</option>
+									<option>Itapema</option>
+									<option>São Paulo</option>
+								</select>
+							</div>
+						</label>
+					</li>
+					<li>						
+						<label>Assunto
+							<div>
+								<input type="text" name="campoAssunto" required>
+							</div>
+						</label>
+					</li>
+				</ul>
+				<ul id="fimFormulario">
+					<li>					
+						<label>Sua Mensagem
+							<div>					
+								<textarea title="Digite aqui a sua mensagem" required></textarea>
+							</div>
+						</label>
+					</li>
+					<li>
+						<input type="submit" name="botaoSubmit" value="Enviar" id="botaoSubmit">
+					</li>
+				</ul>
+			</form>
+		</div>
 		<div id="espacoEmpresa">
 			<h2>+55 44 3354-2636</h2>
 			<h4>Avenida Brasil, 2538, Sobreloja 08 - Maringá - PR</h4>		
 			<div id="map"></div>
-			<!--<img src="imagens/maps.png" id="imagemMapa">-->
 		</div>
 	</div>
 	<footer id="rodape">

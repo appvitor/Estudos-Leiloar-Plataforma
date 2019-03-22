@@ -49,14 +49,14 @@ nav {
 	height: 0.6em;
 }
 #parteMenor {
-	min-width: 39.9%;
+	min-width: 30%;
 	background-color: #f8aa00;
 }
 #parteDoMeio {
 	min-width: 0.2%;
 }
 #parteMaior {
-	min-width: 59.9%;
+	min-width: 70%;
 	background-color: #2b818e;
 }
 #textoDivisoria {

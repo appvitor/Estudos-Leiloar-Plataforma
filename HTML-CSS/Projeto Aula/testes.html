@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TESTES</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/testes.css">
+</head>
+<body>
+	<div id="conteudo">
+		<form>
+			<span>			
+				<label>Nome
+					<div>
+						<input type="text" name="campoNome" title="Digite seu nome" required autofocus>	
+					</div>
+				</label>
+				<label>Email
+					<div>
+						<input type="email" name="campoEmail" title="Digite seu E-Mail" required>
+					</div>
+				</label>
+				<label>Telefone
+					<div>
+						<input type="tel" name="campoTelefone" minlength="10" maxlength="11" title="Digite um Telefone">
+					</div>
+				</label>
+			</span>
+			<span>
+				<label>Estado
+					<div>
+						<select>
+							<option>PR</option>
+							<option>SC</option>
+							<option>SP</option>
+						</select>
+					</div>
+				</label>
+				<label>Cidade
+					<div>
+						<select>
+							<option>Maringá</option>
+							<option>Itapema</option>
+							<option>São Paulo</option>
+						</select>
+					</div>
+				</label>
+				<label>Assunto
+					<div>
+						<input type="text" name="campoAssunto" required>
+					</div>
+				</label>
+			</span>
+			<span>
+				<label>Sua Mensagem
+					<div>
+						<textarea title="Digite aqui a sua mensagem" required></textarea>
+					</div>
+				</label>
+				<input type="submit" name="botaoSubmit" value="Enviar" id="botaoSubmit">
+			</span>
+		</form>
+	</div>
+</body>
+</html>

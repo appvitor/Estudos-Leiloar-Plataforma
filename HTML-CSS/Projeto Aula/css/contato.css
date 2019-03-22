@@ -6,17 +6,15 @@
 form {
 	display: flex;
 	flex-flow: column wrap;
-	justify-content: space-between;
+	justify-content: center;
 	margin-right: 3vw;
 }
-form div {
-	flex-grow: 1;
-	padding: 0;
-	height: auto;
-	min-width: 20vw;
-}
 label {
+	flex-grow: 1;
+	box-sizing: border-box;
 	margin-top: 1vh;
+	margin-bottom: 2%;
+	min-width: 20vw;
 }
 label div {
 	margin-top: 1%;
@@ -26,21 +24,20 @@ input, select, textarea {
 	width: 100%;
 	height: 2em;
 	padding: 0;
-	color: #2b818e;
+	border-radius: 0.3em;
+	border-color: #101b23;
+	background-color: #2e404d;
+
+	color: white;
 }
 select {
 	text-align-last: center;
-}
-#fimFormulario {
-	
 }
 textarea {
 	min-height: 10em;
 	resize: none;
 }
-span {
-	width: 100%;
-	margin: 0 auto;
+#espacoSubmit {
 	text-align: center;
 }
 #botaoSubmit {
@@ -64,6 +61,7 @@ span {
 	height: 100%;
 	width: auto;
 	border-radius: 1em;
+	
 }
 #espacoEmpresa {
 	display: flex;
@@ -87,17 +85,21 @@ h4 {
 @media screen and (max-width: 1200px) {
 
 }
-@media screen and (max-width: 992px) {
-}
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 992px) {	
 	#conteudo {
-		flex-direction: column;
-	}
-	form {
 		flex-direction: column;
 	}
 	form, #espacoEmpresa {
 		margin: 0;
+		padding-left: 15vw;
+		padding-right: 15vw;
+	}
+	#espacoEmpresa {
+		height: 92vh;
+	}
+}
+@media screen and (max-width: 600px) {	
+	form, #espacoEmpresa {
 		padding: 1em;
 	}
 }

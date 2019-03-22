@@ -71,6 +71,7 @@ nav {
 #rodape {
 	display: flex;
 	justify-content: center;
+	margin-top: 2vh;
 }
 @media screen and (pointer: coarse){
 	#linksMenu:hover {

@@ -19,7 +19,7 @@
 #conteudo {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: flex-end;
 	text-align: center;
 	margin-left: 17%;
@@ -33,21 +33,15 @@
 	background-position: center;
 	background-size: 100% 100%;
 	box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+	
 	animation-name: animacao-fundo;
 	animation-duration: 3.5s;
 	animation-delay: 1s;
 	animation-fill-mode: forwards;
+	
+
+
 }
-/*
-#imagemPrincipal {
-	max-width: 75%;
-	height: auto;
-	margin-top: 2%;
-	margin-bottom: 1%;
-	flex-grow: 2;
-	box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
-}
-*/
 #espacoImagensMenores {
 	display: flex;
 	flex-direction: column;
